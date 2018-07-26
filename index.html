@@ -1,0 +1,46 @@
+<!DOCTYPE htm
+
+<html>
+  <head>
+    <title>Vote for cats or dogs.</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="index.js" type="text/javascript"></script>
+  </head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Let's settle this once and for all. </h1>
+      <p>What do you like more, cats or dogs?</p>
+      <button onclick="toggleVoteContainer()">Vote</button>
+    </div>
+  </div>
+
+  <div id="vote-container">
+    <div id="cats-container" class="voting">
+      <div class="carousel" id="cats-carousel" onclick="changeImage(this)">
+        <img src="http://r.fod4.com/s=w900,pd1/o=90/http://p.fod4.com/p/feature_images/GOGHex2SIW8EkuCqnT42_385891624.jpg" alt="cat image"/>
+      </div>
+    </div>
+
+
+  <div class="likes">
+    <i class="fab fa-gratipay" onclick="increaseLikes(this)">0</i>Likes
+  </div>
+
+
+    <div id="dogs-container" class="voting">
+      <div class="carousel" id="dogs-carousel" onclick="changeImage(this)">
+        <img src="https://www.mypetneedsthat.com/wp-content/uploads/2017/10/best-dog-foods-for-pitbulls-1068x346.jpg" alt="dog image"/>
+      </div>
+    </div>
+
+  <div class="likes">
+    <i class="fab fa-gratipay" onclick="increaseLikes(this)">0</i>Likes
+  </div>
+  </div>
+  </body>
+</html>
